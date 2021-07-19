@@ -13,7 +13,6 @@ import java.util.Random;
 
 public class LoginPage extends PageFactory {
     WebDriver driver;
-    BasePage basePage;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
