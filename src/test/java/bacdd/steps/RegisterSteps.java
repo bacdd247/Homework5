@@ -32,7 +32,7 @@ public class RegisterSteps {
     }
 
     @When("^Enter (.*) in register password textbox$")
-    public void inputRegisterPassword(String password) {
+    public void inputRegisterPassword(String password) throws InterruptedException {
             loginPage.inputRegPassword(password);
     }
     @When("^Click on register button$")

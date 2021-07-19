@@ -89,10 +89,10 @@ public class LoginPage extends PageFactory {
         txtRegEmail.sendKeys(regusername);
     }
 
-    public void inputRegPassword(String password) {
+    public void inputRegPassword(String password) throws InterruptedException {
         txtRegPassword.clear();
         txtRegPassword.sendKeys(password + Keys.ENTER);
-        basePage.waitForSec(5);
+        Thread.sleep(5000);
         txtRegPassword.sendKeys(Keys.ENTER);
     }
     public void clickOnRegisterButton() {
