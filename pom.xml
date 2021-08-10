@@ -86,7 +86,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/bacdd.runner/*.java</include>
+                        <include>**/bacdd/runner/*.java</include>
                     </includes>
                     <argLine>-Xmx1024m</argLine>
                 </configuration>

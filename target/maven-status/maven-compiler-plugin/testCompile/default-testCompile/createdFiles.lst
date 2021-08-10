@@ -1,0 +1,10 @@
+bacdd\common\BasePage.class
+bacdd\steps\RegisterSteps.class
+bacdd\page\HomePage.class
+bacdd\steps\CommonSteps.class
+bacdd\common\WebDriverFactory.class
+bacdd\page\LoginPage.class
+bacdd\steps\LoginSteps.class
+bacdd\steps\Hooks.class
+bacdd\runner\RunRegisterTest.class
+bacdd\runner\RunLoginTest.class

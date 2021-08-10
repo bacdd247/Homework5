@@ -2,7 +2,9 @@ package bacdd.page;
 
 import bacdd.common.BasePage;
 import bacdd.steps.LoginSteps;
+import io.cucumber.java.bs.A;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +31,15 @@ public class HomePage extends PageFactory {
     @FindBy(xpath = "//nav[@class='woocommerce-MyAccount-navigation']//a[text()='Logout']")
     WebElement logoutButton;
 
+
+
+    //    @FindBy(xpath = "")
+//    WebElement ;
+    //    @FindBy(xpath = "")
+//    WebElement ;
+
+
+
     public void openHomePage() {
         driver.get("http://practice.automationtesting.in/");
     }
@@ -44,8 +55,14 @@ public class HomePage extends PageFactory {
     public void verifyNumberOfArrivals(){
         Assert.assertEquals(3,listArrivals.size());
     }
-
     public void logout() {
         logoutButton.click();
     }
+    public void clickOnArrival(String productname) {
+        String xpathArrival = "//img[@title='" + productname + "']";
+        WebElement arrival = driver.findElement(By.xpath(xpathArrival));
+        Assert.assertTrue(arrival.isEnabled());
+        arrival.click();
+    }
+
 }

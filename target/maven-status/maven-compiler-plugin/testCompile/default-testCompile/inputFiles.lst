@@ -1,0 +1,10 @@
+D:\Auto\Study\src\test\java\bacdd\steps\LoginSteps.java
+D:\Auto\Study\src\test\java\bacdd\steps\CommonSteps.java
+D:\Auto\Study\src\test\java\bacdd\steps\RegisterSteps.java
+D:\Auto\Study\src\test\java\bacdd\steps\Hooks.java
+D:\Auto\Study\src\test\java\bacdd\common\BasePage.java
+D:\Auto\Study\src\test\java\bacdd\common\WebDriverFactory.java
+D:\Auto\Study\src\test\java\bacdd\runner\RunRegisterTest.java
+D:\Auto\Study\src\test\java\bacdd\page\LoginPage.java
+D:\Auto\Study\src\test\java\bacdd\runner\RunLoginTest.java
+D:\Auto\Study\src\test\java\bacdd\page\HomePage.java

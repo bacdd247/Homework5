@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         plugin = {"pretty","html:target/report.html"},
         glue="bacdd.steps",
-        tags = "@Test",
-        features = "src/test/java/bacdd/feature/Registration.feature"
+        //tags = "@Test",
+        features = "src/test/java/bacdd/feature"
 )
 public class RunRegisterTest {
 }

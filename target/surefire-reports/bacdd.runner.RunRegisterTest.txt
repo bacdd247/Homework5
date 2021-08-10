@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: bacdd.runner.RunRegisterTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,259.118 s <<< FAILURE! - in bacdd.runner.RunRegisterTest
+Registration.Registration and Signin  Time elapsed: 1.046 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VF9VKG6', ip: '192.168.1.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x002C3733+2504499]
+	Ordinal0 [0x0025C401+2081793]
+	Ordinal0 [0x00162628+1058344]
+	Ordinal0 [0x0017C99F+1165727]
+	Ordinal0 [0x00179DC3+1154499]
+	Ordinal0 [0x001A9B82+1350530]
+	Ordinal0 [0x001A97DA+1349594]
+	Ordinal0 [0x001A5D4B+1334603]
+	Ordinal0 [0x001822B4+1188532]
+	Ordinal0 [0x00183149+1192265]
+	GetHandleVerifier [0x0043FB8C+1512252]
+	GetHandleVerifier [0x004EB0DF+2214031]
+	GetHandleVerifier [0x00344BC3+484211]
+	GetHandleVerifier [0x00343E69+480793]
+	Ordinal0 [0x0026218D+2105741]
+	Ordinal0 [0x002666E8+2123496]
+	Ordinal0 [0x00266827+2123815]
+	Ordinal0 [0x0026FB73+2161523]
+	BaseThreadInitThunk [0x764FFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C77A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C77A4E+238]
+	(No symbol) [0x00000000]
+
+	org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VF9VKG6', ip: '192.168.1.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+
