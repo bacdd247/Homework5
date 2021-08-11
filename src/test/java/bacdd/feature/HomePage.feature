@@ -35,7 +35,6 @@ Feature: Home Page
     When Click on Reviews tab
     Then Verify Reviews regarding that book
 
-
   Scenario: Home page - Arrivals-Images-Add to Basket
     Given Open home page
     And Click the image in the Arrivals Selenium Ruby

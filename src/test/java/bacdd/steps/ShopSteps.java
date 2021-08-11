@@ -20,17 +20,11 @@ public class ShopSteps {
     }
 
     @When("^Adjust the filter by price between (.*) to (.*) rps$")
-    public void adjustTheFilter() {
+    public void adjustTheFilter(String leftPrice, String rightPrice) {
+        shopPage.adjustThePrice(leftPrice, rightPrice);
 
     }
-    @When("^Click on Filter button$")
-    public void cliclFilter() {
 
-    }
-    @When("^User can view books only between (.*) to (.*) rps price$")
-    public void verifyBooksPrice() {
-
-    }
     @When("^Click (.*) in the product category$")
     public void clickOnCategory(String prodCate) {
         shopPage.clickOnProductCategory(prodCate);
@@ -70,4 +64,13 @@ public class ShopSteps {
         checkoutPage.verifyTaxRate();
     }
 
+    @When("^Click on Filter button$")
+    public void clickFilter()   {
+        shopPage.clickOnFilterBtn();
+    }
+
+    @When("^User can view books only between (.*) to (.*) rps price$")
+    public void verifyFilterByPrice(String minPrice, String maxPrice)   {
+        shopPage.verifyProductByPrice(minPrice, maxPrice);
+    }
 }

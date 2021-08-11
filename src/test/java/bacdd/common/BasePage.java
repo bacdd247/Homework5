@@ -1,7 +1,6 @@
 package bacdd.common;
 
-import bacdd.steps.Hooks;
-import org.junit.Assert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -23,7 +22,7 @@ public class BasePage {
 
     public void waitForSec(int time){
         try {
-            Thread.sleep(time*1000);
+            Thread.sleep(time* 1000L);
 
         } catch (InterruptedException e) {
             e.printStackTrace();

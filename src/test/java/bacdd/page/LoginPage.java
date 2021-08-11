@@ -1,6 +1,5 @@
 package bacdd.page;
 
-import bacdd.common.BasePage;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -72,6 +71,10 @@ public class LoginPage extends PageFactory {
     }
 
     public void verifyCanNotLoginAgain() {
+        Assert.assertTrue(btnLogin.isDisplayed());
+    }
+
+    public void verifyLogOutSuccess() {
         Assert.assertTrue(btnLogin.isDisplayed());
     }
 

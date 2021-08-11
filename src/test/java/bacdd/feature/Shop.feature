@@ -18,33 +18,33 @@ Feature: Shop
     Then User can view only that particular product
 
 
-  Scenario: Shop-Default Sorting Functionality
+  Scenario: Shop-Default Sorting Functionality 1
     Given Open home page
     And Click on Shop Menu
     When Click on Sort by popularity in Default sorting dropdown
     Then User can view the popular products only
 
-  Scenario: Shop-Default Sorting Functionality
+  Scenario: Shop-Default Sorting Functionality 2
     Given Open home page
     And Click on Shop Menu
     When Click on Sort by average rating in Default sorting dropdown
     Then User can view the popular products only
 
 
-  Scenario: Shop-Default Sorting Functionality
+  Scenario: Shop-Default Sorting Functionality 3
     Given Open home page
     And Click on Shop Menu
     When Click on Sort by newness in Default sorting dropdown
     Then User can view the popular products only
 
-  Scenario: Shop-Default Sorting Functionality
+  Scenario: Shop-Default Sorting Functionality 4
     Given Open home page
     And Click on Shop Menu
     When Click on Sort by price: low to high in Default sorting dropdown
     Then User can view the popular products only
 
 
-  Scenario: Shop-Default Sorting Functionality
+  Scenario: Shop-Default Sorting Functionality 5
     Given Open home page
     And Click on Shop Menu
     When Click on Sort by price: high to low in Default sorting dropdown
@@ -79,7 +79,6 @@ Feature: Shop
     And Click on Place Order button
     Then Verify Order confirmation page with order details,bank details
 
-  @Test
   Scenario: Shop-Add to Basket-View Basket-Tax Functionality
     Given Open home page
     And Click on Shop Menu

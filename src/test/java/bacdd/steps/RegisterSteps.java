@@ -1,7 +1,6 @@
 package bacdd.steps;
 
 import bacdd.common.BasePage;
-import bacdd.common.WebDriverFactory;
 import bacdd.page.HomePage;
 import bacdd.page.LoginPage;
 import io.cucumber.java.en.Then;

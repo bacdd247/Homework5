@@ -1,8 +1,5 @@
 package bacdd.page;
 
-import bacdd.common.BasePage;
-import bacdd.steps.LoginSteps;
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,13 +27,12 @@ public class HomePage extends PageFactory {
     List<WebElement> listArrivals;
     @FindBy(xpath = "//nav[@class='woocommerce-MyAccount-navigation']//a[text()='Logout']")
     WebElement logoutButton;
-
-
-
-    //    @FindBy(xpath = "")
-//    WebElement ;
-    //    @FindBy(xpath = "")
-//    WebElement ;
+    @FindBy(xpath = "//a[text()='Orders']")
+    WebElement menuOrders;
+    @FindBy(xpath = "//a[text()='Account Details']")
+    WebElement menuAccountDetails;
+    @FindBy(xpath = "//a[text()='Addresses']")
+    WebElement menuAddresses;
 
 
 
@@ -59,10 +55,14 @@ public class HomePage extends PageFactory {
         logoutButton.click();
     }
     public void clickOnArrival(String productname) {
-        String xpathArrival = "//img[@title='" + productname + "']";
-        WebElement arrival = driver.findElement(By.xpath(xpathArrival));
+        By xpathArrival = By.xpath("//img[@title='" + productname + "']");
+        WebElement arrival = driver.findElement(xpathArrival);
         Assert.assertTrue(arrival.isEnabled());
         arrival.click();
     }
+
+    public void clickOnAddresses()  { menuAddresses.click();  }
+    public void clickOnOrders()  { menuOrders.click();  }
+    public void clickOnAccountDetails()  { menuAccountDetails.click();  }
 
 }

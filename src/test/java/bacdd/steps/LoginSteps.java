@@ -68,4 +68,7 @@ public class LoginSteps {
     @Then("^User is not signed in to his account again$")
     public void verifyCanNotLoginAgain() { loginPage.verifyCanNotLoginAgain(); }
 
+    @Then("^User successfully comes out from the site$")
+    public void verifyLogOutSuccess()   {   loginPage.verifyLogOutSuccess();    }
+
 }

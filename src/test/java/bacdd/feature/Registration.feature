@@ -3,7 +3,6 @@ Feature: Registration
   I want to buy some books
   So that I need to register a new account
 
-  @Test
   Scenario:  Registration and Signin
     Given Open home page
     And Click on My Account Menu
@@ -13,7 +12,7 @@ Feature: Registration
     Then User will be registered successfully and will be navigated to the Home page
 
 
-  Scenario:  Registration with invalid Email-id
+  Scenario:  Registration with invalid Email-id 1
     Given Open home page
     And Click on My Account Menu
     When Enter bacdd@mail in register username textbox
@@ -22,7 +21,7 @@ Feature: Registration
     Then Registration must fail with a warning message Error: Please provide a valid email address.
 
 
-  Scenario:  Registration with empty Email-id
+  Scenario:  Registration with empty Email-id 2
     Given Open home page
     And Click on My Account Menu
     When Enter Paralinebacdd in register password textbox

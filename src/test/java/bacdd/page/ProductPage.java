@@ -1,15 +1,8 @@
 package bacdd.page;
-import bacdd.common.BasePage;
-import io.cucumber.java.sl.In;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static jdk.nashorn.internal.objects.NativeString.length;
 
 public class ProductPage extends PageFactory {
     WebDriver driver;
@@ -60,7 +53,7 @@ public class ProductPage extends PageFactory {
         Assert.assertTrue(noticeTitle.getText().contains("has been added to your basket"));
         String items = productNumber.getAttribute("value");
         String price = priceProduct.getText().replace("₹","").replace(".00","");
-        String amount = "₹" + String.valueOf(Long.parseLong(price) * Long.parseLong(items)) + ".00";
+        String amount = "₹" + (Long.parseLong(price) * Long.parseLong(items)) + ".00";
         if (Integer.parseInt(items) == 1) {
             Assert.assertEquals(items + " Item", cartItems.getText());
         } else {
